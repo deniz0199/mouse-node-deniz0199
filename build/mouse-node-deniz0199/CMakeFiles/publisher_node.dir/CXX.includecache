@@ -7,10 +7,16 @@
 #IncludeRegexTransform: 
 
 /home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/publisher_node.cpp
+publisher_node.h
+/home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/publisher_node.h
+
+/home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/publisher_node.h
 ros/ros.h
 /home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/ros/ros.h
 std_msgs/String.h
 /home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/std_msgs/String.h
+fcntl.h
+-
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

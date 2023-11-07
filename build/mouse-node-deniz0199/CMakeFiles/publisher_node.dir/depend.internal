@@ -3,6 +3,7 @@
 
 mouse-node-deniz0199/CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o
  /home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/publisher_node.cpp
+ /home/deniz/Projects/mouse-node-deniz0199/src/mouse-node-deniz0199/src/publisher_node.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
  /opt/ros/noetic/include/ros/assert.h

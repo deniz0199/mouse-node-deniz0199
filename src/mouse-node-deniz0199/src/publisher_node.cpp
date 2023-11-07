@@ -1,15 +1,10 @@
-#include "ros/ros.h"
-#include "std_msgs/Char.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
+#include "publisher_node.h"
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "Publisher");
     ros::NodeHandle nh;
-
-    ros::Publisher topic_pub = nh.advertise<std_msgs::Char>("mouse_node",999);
-    ros::Rate loop_rate(1);
+    ros::Rate loop_rate(2);
+    ros::Publisher topic_pub = nh.advertise<std_msgs::String>("mouse_node",9999);
 
     char mouseMvmData[3];
 
@@ -19,13 +14,21 @@ int main(int argc, char **argv) {
 
         read(file, mouseMvmData, 3);
 
-        std_msgs::Char x;
-        std_msgs::Char y;
+        std_msgs::String x;
+        std_msgs::String y;
 
-        x.data = mouseMvmData[1];
-        y.data = mouseMvmData[2];
+        std::stringstream sx;
+        std::stringstream sy; 
+        sx << (int)mouseMvmData[1];
+        sy << (int)mouseMvmData[2];
+
+
+        x.data = sx.str();
+        y.data = sy.str();
 
         topic_pub.publish(x);
+        topic_pub.publish(y);
+
         ros::spinOnce();
         loop_rate.sleep();
     }
