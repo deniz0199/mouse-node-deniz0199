@@ -1,0 +1,8 @@
+prefix=/home/deniz/Projects/mouse-node-deniz0199/devel
+
+Name: mouse-node-deniz0199
+Description: Description of mouse-node-deniz0199
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

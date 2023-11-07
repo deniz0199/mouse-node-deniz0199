@@ -1,0 +1,2 @@
+mouse-node-deniz0199
+-DCATKIN_DEVEL_PREFIX=/home/deniz/Projects/mouse-node-deniz0199/devel -DCMAKE_INSTALL_PREFIX=/home/deniz/Projects/mouse-node-deniz0199/install -G Unix Makefiles
